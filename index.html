@@ -6,18 +6,21 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="bg-white shadow">
-        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-            <h1 class="text-3xl font-bold tracking-tight text-gray-900">SKnight</h1>
-            <span>Home</span>
-            <span>About</span>
-            <span>Services</span>
-                <span>Residential Window Cleaning</span>
-                <span>Commercial Window Cleaning</span>
-                <span>Gutter Cleaning</span>
-                <span>Conservatory Cleaning</span>
-            <span>Contact</span>
-            <span>07754 185443</span>
+    <header id="top" class="bg-white shadow">
+        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 grid grid-cols-2">
+            <div class="">
+                <h1 class="font-serif text-4xl font-bold tracking-wide">S.Knight</h1>
+                <h2 class="font-thin text-xs">Window Cleaning Services</h2>
+            </div>
+            <nav class="self-center justify-self-end">
+                <ul class="font-light text-lg flex space-x-6">
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="font-semibold"><a href="tel:07754185443">07754 185443</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <div class="bg-[url('images/sknight-header.jpg')] bg-no-repeat bg-cover bg-top"> <!-- The pagination -->
@@ -26,12 +29,12 @@
                 <div class="basis-1/2">
                     <h2 class="font-serif text-5xl font-bold pb-7">S.Knight Window<br>Cleaning Services</h2>
                     <p class="font-thin pb-7">Traditional window cleaning methods.</p>
-                    <button class="bg-white text-black font-light py-2.5 px-10">Have a chat</button>
+                    <a href="#contact" class="bg-white text-black font-light py-2.5 px-10">Have a chat</a>
                 </div>
             </div>
         </div>  
     </div>
-    <div class="container text-center mx-auto py-20"> <!-- White Section with service list -->
+    <div id="services" class="container text-center mx-auto py-20"> <!-- White Section with service list -->
         <div>
             <h3 class="font-serif text-5xl font-bold pb-10">Your Local Window Cleaner - Aylesbury</h3>
             <p class="font-thin pb-8">Sam has been in the window cleaning industry for over 20 years.</p>
@@ -55,22 +58,22 @@
             </div>
         </div>        
     </div>
-    <div class="bg-blue-950"> <!-- Man in the van -->
+    <div id="about" class="bg-blue-950"> <!-- Man in the van -->
         <div class="flex flex-row container mx-auto items-center">
             <div class="basis-1/2">
                 <img class="mx-auto p-12" src="images/sknight-van.jpg" alt="Van"> 
             </div>
-            <div class="basis-1/2 text-white font-thin">
+            <div class="basis-1/2 text-white font-thin pl-10">
                 <p class="pb-2">The blue VW van?</p>
                 <h4 class="font-serif text-5xl font-bold pb-7 ">See the man in the van,<br> Its probably Sam.</h4>
                 <p class="pb-7">Sam concentrates on the traditional methods of window cleaning, where care is taken to not only the glass, but the frames and seals too.</p>
-                <button class="bg-white text-black font-light py-2.5 px-10">Contact Me</button>
+                <a href="#contact" class="bg-white text-black font-light py-2.5 px-10">Contact Me</a>
             </div>
         </div>
     </div>
     <div> <!-- Where? -->
         <div class="flex flex-row container mx-auto items-center py-12">
-            <div class="basis-1/2">
+            <div class="basis-1/2 pr-20">
                 <p class="font-thin pb-2">Location?</p>
                 <h4 class="font-serif text-5xl font-bold pb-4">Aylesbury & <br>surrounding areas.</h4>
                 <p class="font-thin pb-2">We service areas including but not limited to: Aylesbury, Stone, Haddenham, Longwick, Waddesdon, Wesctcott, Tring, Ivinghoe, Pitstone, Halton, Wendover, Stoke Mandville,  Aston Clinton.</p>
@@ -81,16 +84,21 @@
 
         </div>
     </div>
-    <div class="bg-blue-950"> <!-- Contact -->
+    <div id="contact" class="bg-blue-950"> <!-- Contact -->
         <div class="flex flex-row container mx-auto py-12 text-white font-thin">
             <div class="basis-full text-center">
                 <h4 class="pb-2">Contact?</h4>
                 <p class="font-serif text-5xl font-bold pb-7 ">Speak to Sam.</p>
-                <p>He’s a friendly guy, wont say no to a cup of tea and will do a good job on your windows.</p>
-                <p>07754 185443</p>
-                <p>admin@sknight.co.uk</p>
+                <p class="pb-8">He’s a friendly guy, wont say no to a cup of tea and will do a good job on your windows.</p>
+                <p class="font-serif text-3xl font-bold pb-7 underline"><a href="tel:07754185443">07754 185443</a></p>
+                <p class="font-serif text-3xl font-bold underline"><a href="https://www.facebook.com/sknightwindowcleaning/" target="_blank">Message On Facebook</a></p>
             </div>
         </div>
     </div>
+    <footer class="grid grid-cols-1">
+        <div class="py-5 justify-self-center flex">
+            <p class="font-thin">Site by <span class="font-medium underline">Exeme</span></p>           
+        </div>
+    </footer>
 </body>
 </html>
