@@ -1,5 +1,5 @@
 # sknight.co.uk
-sknight website migrated away from Wordpress to save on hosting costs
+sknight website
 
 Notable mentions of frameworks / technologies:
 - Tailwind CSS
